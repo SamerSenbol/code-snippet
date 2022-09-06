@@ -1,0 +1,55 @@
+/* Start Variables */
+:root {
+    --primary: #EA40A4;
+    --business: #3A82EF;
+    --personal: var(--primary);
+    --light: #EEE;
+    --grey: #888;
+    --dark: #313154;
+    --danger: #ff5b57;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    --busines-glow: 0px 0px 4px rgba(58, 130, 239, 0.75);
+    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+body{
+    font-family: "Work Sans",sans-serif
+}
+/* End Global Rules */
+.content{
+    background-color: var(--primary);
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-color: #777
+}
+/* Small Screen */
+@media (min-width:768px){
+    .container{
+        width: 750px
+    }
+}
+/* Medium Screem */
+@media (min-width:992px){
+    .container{
+        width: 970px
+    }
+}
+/* Large Screem */
+@media (min-width:1200px){
+    .container{
+        width: 1170px
+    }
+}
